@@ -14,7 +14,7 @@ public class conn {
     public conn() {
         try {
 
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_management_system", "root", "#Omkar007");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_management_system", "root", "#Shivani007");
             statement = connection.createStatement();
         }
         catch (SQLException e){
@@ -25,3 +25,4 @@ public class conn {
         }
     }
 }
+
