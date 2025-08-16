@@ -1,0 +1,41 @@
+SHOW CREATE DATABASE hospital_management_system;
+
+USE hospital_management_system
+
+CREATE TABLE IF NOT EXISTS `hospital_management_system`.`login` (
+  `ID` VARCHAR(20) NULL DEFAULT NULL,
+  `PW` VARCHAR(20) NULL DEFAULT NULL)
+
+CREATE TABLE IF NOT EXISTS `hospital_management_system`.`ambulance` (
+  `Name` VARCHAR(20) NULL DEFAULT NULL,
+  `Gender` VARCHAR(20) NULL DEFAULT NULL,
+  `Car_id` VARCHAR(20) NULL DEFAULT NULL,
+  `Age` VARCHAR(20) NULL DEFAULT NULL)
+
+CREATE TABLE IF NOT EXISTS `hospital_management_system`.`room` (
+  `room_no` VARCHAR(20) NULL DEFAULT NULL,
+  `Availability` VARCHAR(20) NULL DEFAULT NULL,
+  `Price` VARCHAR(20) NULL DEFAULT NULL,
+  `Room_Type` VARCHAR(20) NULL DEFAULT NULL)
+
+CREATE TABLE IF NOT EXISTS `hospital_management_system`.`appointments` (
+  `patient_id` VARCHAR(20) NULL DEFAULT NULL,
+  `doctor_name` VARCHAR(20) NULL DEFAULT NULL,
+  `appointment_date` VARCHAR(100) NULL DEFAULT NULL,
+  `appointment_time` VARCHAR(20) NULL DEFAULT NULL,
+  `deposit` VARCHAR(20) NULL DEFAULT NULL)
+
+CREATE TABLE IF NOT EXISTS `hospital_management_system`.`patient_info` (
+  `ID` VARCHAR(20) NULL DEFAULT NULL,
+  `Number` VARCHAR(40) NOT NULL,
+  `Name` VARCHAR(20) NULL DEFAULT NULL,
+  `Gender` VARCHAR(20) NULL DEFAULT NULL,
+  `Patient_Disease` VARCHAR(20) NULL DEFAULT NULL,
+  `Room_Number` VARCHAR(20) NULL DEFAULT NULL,
+  `Time` VARCHAR(100) NULL DEFAULT NULL,
+  `Deposite` VARCHAR(20) NULL DEFAULT NULL)
+
+
+
+
+
